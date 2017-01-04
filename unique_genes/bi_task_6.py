@@ -15,11 +15,8 @@ def outInFile(name, l):
     f.close()  
 
 def main():
-
     name = 'geneList.txt'
     name_w = 'geneList_out.txt'
-    outInFile(name_w, set(readListFF(name)))
-
-    
+    outInFile(name_w, set(readListFF(name))) 
 if __name__=='__main__':
     main()
