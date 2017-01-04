@@ -1,0 +1,30 @@
+Разбить файл в fasta формате на два файла в fasta формате. Содержание каждого файла соотвествует нуклеотидным последовательностям с именами left или right.
+Input file in fasta format:
+>Name_1_left
+ATACATCGTACGTTGATCGATGCTAGCTAGGGG
+>Name_2_right
+AAATATATTTATATGATAGATGATGATTTTTC
+>Name_1_right
+AAATTATATATTATAGAGGAGCGCGAGA
+>Name_3_left
+ATACATCGTACGTTGATCGATGCTAGCTAGCCCCCCCC
+>Name_3_right
+AAATATATTTATATGATAGATGATGATTTTT
+>Name_2_left
+AAATTATATATTATAGAGGAGCG
+
+Ouput of file 1 in fasta format:
+>Name_1_left
+ATACATCGTACGTTGATCGATGCTAGCTAGGGG
+>Name_2_left
+AAATTATATATTATAGAGGAGCG
+>Name_3_left
+ATACATCGTACGTTGATCGATGCTAGCTAGCCCCCCCC
+
+Ouput of file 2 in fasta format:
+>Name_1_right
+AAATTATATATTATAGAGGAGCGCGAGA
+>Name_2_right
+AAATATATTTATATGATAGATGATGATTTTTC
+>Name_3_right
+AAATATATTTATATGATAGATGATGATTTTT
